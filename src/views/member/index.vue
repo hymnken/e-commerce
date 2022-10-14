@@ -1,15 +1,12 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template lang="">
   <div>
-    <router-view />
+    <p>a</p>
   </div>
 </template>
 <script>
-
 export default {
-  name: 'App',
-  setup () {
 
-  }
 }
 </script>
 <style lang="">

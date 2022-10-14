@@ -1,0 +1,26 @@
+// 鼠标经过上移阴影动画
+.hoverShadow () {
+  // 过渡
+  transition: all .5s;
+
+  &:hover {
+    // 往上移3px
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+// 混入
+
+// .abc(@width) {
+  //   width: 100px;
+  //   height: 100px;
+//   width: @width;
+//   height: @width;
+// }
+
+// .box {
+//   .abc(300px);
+// }
+
