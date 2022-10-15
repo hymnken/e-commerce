@@ -17,6 +17,7 @@
 import NavBar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
 import Footer from '@/components/footer.vue'
+import { useStore } from 'vuex'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Layout',
@@ -24,6 +25,10 @@ export default {
     NavBar,
     Header,
     Footer
+  },
+  setup () {
+    const store = useStore()
+    store.dispatch('category/getList')
   }
 }
 </script>
