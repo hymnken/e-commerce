@@ -1,23 +1,35 @@
 <template lang="">
   <div>
     <!-- 顶部通栏 -->
-    <nav>顶部</nav>
+    <NavBar />
     <!-- 头部组件 -->
-    <header>头部</header>
+    <Header />
     <!-- 中间内容 -->
-    <div class="main">
+    <div class="app-body">
       <!-- 二级路由 -->
       <router-view></router-view>
     </div>
     <!-- 底部组件 -->
-    <footer>底部</footer>
+    <Footer />
   </div>
 </template>
 <script>
+import NavBar from '@/components/navbar.vue'
+import Header from '@/components/header.vue'
+import Footer from '@/components/footer.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Layout'
+  name: 'Layout',
+  components: {
+    NavBar,
+    Header,
+    Footer
+  }
 }
 </script>
-<style lang="">
+<style scoped lang="less">
+
+.app-body{
+  min-height: 600px;
+}
 </style>
